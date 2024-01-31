@@ -29,7 +29,8 @@ zx
  } )
         prom.then((data)=>(console.log(data))).catch((err)=>(console.log(err)))
 
-        document.getElementsByClassName("res").innerTex="Your results are here!!..."
+       let para= document.getElementsByClassName("res").innerTex="User profile is here!!..."
+       console.log(para);
 }        
         
 
