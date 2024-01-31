@@ -1,8 +1,8 @@
 let division = document.createElement ('div')
-division.innerHTML=`<lable for='txt'> Name of the Area </lable>
+division.innerHTML=`<lable for='txt'> USER ID </lable>
 <span>
 <input type ="text" ClassName="txt" placeholder='ENTER HERE'> 
-<button type="button" onClick="show()">SEARCH</button>
+<button type="button" onClick="show()">LOG IN</button>
 </span>`
 document.body.append(division)
 
@@ -12,7 +12,7 @@ show=()=>{
 
 let prom = new Promise( (resolve,reject)=>{
     var request = new XMLHttpRequest();
-    request.open(`GET`,`https://24pullrequests.com/users.json?page=2`);
+    request.open(`GET`,`https://urlhaus-api.abuse.ch/v1/urls/recent/`);
 
     request.send();
 zx
